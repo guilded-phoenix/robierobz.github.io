@@ -196,6 +196,8 @@ a:not(.navigation__link--active):hover{
   flex: 0 1 20%;
   perspective: 40rem;
   backface-visibility: hidden;
+  position: relative;
+  z-index: -1;
 }
 
 .about-me__img{
