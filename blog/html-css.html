@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Robie's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="../imgs/rsz-r.png" alt="Blog Logo" class="header__logo">
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="../index.html" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./tech-blog.html" class="navigation__link">Tech Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./core-blog.html" class="navigation__link">Core Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="heading-1">HTML/CSS - The best practices associated with using classes vs. ids</h1>
+      <p class="paragraph-large"> <strong> 1. What are classes and ids in CSS?</strong></p>
+      <p class="paragraph">Classes and IDs are CSS selectors, that allow us to select and stylize various html elements on a webpage.
+      
+      </p>
+      <p class="paragraph">
+        The <dfn>ID</dfn> selector allows you to specify style guidelines that only apply to a certain web page element. Each web page can only have one element with a single ID attribute . This means the ID selector can never be used to style more than one element. <br>
+        In the html file, the attribute <em>id</em> is used to set the id name of an element. <br> <br>
+       
+        <img src="../imgs/id.png" alt="">
+      </p>
+    
+      <p class="paragraph">
+        Within the CSS file, <em>#</em> (Hashtag) is used to select the ID and set the styles for it.
+        <br> <br>
+        <img src="../imgs/id-css.png" alt="">
+      </p>
+      
+      <p class="paragraph">
+        A <dfn>class</dfn> selector allows you to define style rules that apply to any element with a class attribute equal to a certain value.
+        While IDs can only be used once on a web page, Classes can be used across multiple elements. When we apply style using a class selector, any element which shares that class name will share the styles assigned to thjat particular class. <br>
+        In the html file, the attribute <em>class</em> is used to set the class name. <br> <br>
+        <img src="../imgs/class.png" alt="">
+      </p>
+      <p class="paragraph">
+        Within the CSS file, <em>.</em> (Period) is used to select the class and set the styles for it. <br> <br>
+        <img src="../imgs/class-css.png" alt="">
+      </p>
+     
+      <p class="paragraph-large"> <strong> 2. What are the best practices while using classes and IDs?</strong></p>
+      <ol class="ordered-list">
+        <li class="ordered-list-item"> <strong>Prefer the use of classes of IDs</strong> <br>
+        Classes have less specificity and IDs have higher specificity. The order of specificity is as follows: <br>
+        Inline style > !important > Identifiers(ID) > Classes, pseudo-classes and attributes > Elements and pseudo-elements. <br>
+        Using less specific selectors make the maintanence easy.
+      </li>
+        
+        <li class="ordered-list-item"><strong>Use Generic ID and Class Names</strong> <br>
+        Using generic ID and Class names reduce maintanence problems.</li>
+      </ol>
+      <br>
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </body>
+
+
+
+</html>
