@@ -1,1 +1,230 @@
+:root{
+  --color-primary: #FFC100;
+  --color-primary-alpha: #ffbf0092;
+  --color-secondary: #000;
+}
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: #bd0100;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top:2rem;
+  background-color: black;
+}
+.header__logo-box{
+  flex: 0 1 20%;
+  margin-left: 4rem;
+ 
+}
 
+.header__logo{
+  display: block;
+  height: 10rem;
+}
+.navigation{
+  
+  flex-grow: 1;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.navigation__list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.navigation__item{
+  margin-left: 4rem;  
+}
+.navigation__link, .navigation__link:link, .navigation__link:visited{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-primary-alpha);
+  transition: all 0.25s;
+  cursor: grabbing;
+}
+.navigation__link--active{
+  color: var(--color-primary) !important;
+  border-bottom: 0.5rem solid var(--color-primary);
+  cursor:default !important;
+}
+
+a:not(.navigation__link--active):hover{
+  transform: translateY(-1rem) rotate(-15deg);
+  color: var(--color-primary) !important;
+}
+.main{
+  margin-top: 2rem;;
+}
+
+.about-me{
+  display: flex;;
+}
+.about-me__img-box{
+  flex: 0 1 20%;
+}
+.about-me__img{
+  height: 60rem;
+}
+.about-me__description{
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.heading-1{
+  font-size: 10rem;
+  text-align: center;
+}
+.heading-2{
+ 
+  text-align: center;
+}
+.heading-3{
+  
+  text-align: center;
+}
+.paragraph{
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.about-me__form{
+  align-self: center;
+  padding-left: 2rem;
+}
+.about-me__button{
+  
+  margin-top: 4rem;
+  color:  var(--color-primary);
+  background-color: var(--color-secondary);
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  outline: none;
+  display: inline-block;
+  border: none;
+  border-radius: 3rem;
+  transition: 0.2s;
+}
+.about-me__button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1280px){
+  html{
+    font-size: 55%;
+  }
+  .about-me__img{
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 1122px){
+  html{
+    font-size: 50%;
+  }
+  .navigation{
+    font-size: 4rem;
+  }
+  .heading-1{
+    font-size: 7rem;
+  }
+  .paragraph{
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 900px){
+
+ 
+  .heading-1{
+    font-size: 7rem;
+    
+  }
+
+  .paragraph{
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 720px){
+
+  .navigation{
+    font-size: 3rem;
+  }
+  .heading-1{
+    font-size: 6rem;
+  }
+  .paragraph{
+    font-size: 1.8rem;
+  }
+  .about-me__img{
+    height: 25rem;
+  }
+}
+@media only screen and (max-width: 550px){
+
+  .navigation{
+    font-size: 2rem;
+  }
+  .heading-1{
+    font-size: 4rem;
+  }
+  .paragraph{
+    font-size: 1.5rem;
+  }
+  .about-me__img{
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 500px){
+
+  .about-me{
+    flex-direction: column;
+  }
+  .about-me__img-box{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 410px){
+  .header__logo-box{
+    margin-left: 2rem;
+  }
+  .navigation__item{
+    margin-left: 2rem;  
+  }
+}
+@media only screen and (max-width: 370px){
+  
+  .header__logo{
+   
+    height: 7rem;
+  }
+}
+@media only screen and (max-width: 330px){
+  .navigation{
+    font-size: 1.8rem;
+  }
+  .heading-1{
+    font-size: 3.8rem;
+  }
+  .paragraph{
+    font-size: 1.4rem;
+  }
+  
+}

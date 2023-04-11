@@ -1,9 +1,49 @@
 <html>
   <head>
-    <title>My blog</title>
+    <title>Robie's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+  </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="imgs/rsz-r.png" alt="Blog Logo" class="header__logo">
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--active">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Tech Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Cultural Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="about-me">
+        <div class="about-me__img-box">
+          <img src="imgs/robin-teen.png" alt="Picture of Robin from Teen Titans" class="about-me__img">
+        </div>
+        <div class="about-me__description">
+          <h1 class="heading-1">Welcome to the madness!</h1>
+          <p class="paragraph">Hi, my name is Robin Baby. Welcome to my blog! You can find all the blogs I make as part of my dev academy bootcamp here. I am hoping to add lots of entries about HTML, CSS and JavaScript here. Let's see what waits for me at the end of this journey :&rpar;</p>
+          <form action="./blog/te-houtaewa-template.html" class="about-me__form">
+            <button class="about-me__button">Read blog about te-houtaewa</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+
+    </footer>
   </body>
 </html>
