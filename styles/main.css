@@ -288,6 +288,9 @@ a:not(.navigation__link--active):hover{
 
 
 /*Tech Blog HTML CSS*/
+.underline{
+  text-decoration: underline;
+}
 .ordered-list, .unordered-list{
   padding: 0 6rem;
 }

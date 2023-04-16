@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <title>JS Fundamentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="../imgs/rsz-r.png" alt="Blog Logo" class="header__logo">
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="../index.html" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./tech-blog.html" class="navigation__link">Tech Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./core-blog.html" class="navigation__link">Core Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="heading-1">JS Fundamentals</h1>
+      <p class="paragraph-large"> <strong>1. What is JavaScript and what is its relationship to HTML and CSS</strong></p>
+      <p class="paragraph">
+        We can make a super basic webpage using HTML. We can add some style using CSS. But to make it truly functional, we need to add logic to it. This is where JavaScript comes in. It is a lightweight programming language that adds logic to the webpage. <br>
+        To put it simply, if HTML is the frame of a car, and CSS is its body and paintjob, JavaScript is like the engine that would let us drive it around.
+        <br>
+        Adding JavaScript lets us control how the page should behave when the customer interacts with it. 
+      </p>
+
+      <p class="paragraph-large"> <strong>2. Explain control flow and loops using an example process from everyday life</strong></p>
+      <p class="paragraph">
+        Control flow is used to determine the set of instructions that will get executed when a certain condition is met. Think of it like a traffic light in a junction. Depending on whether the light is red, yellow or green, the traffic would move. 
+        </p>
+        
+      <p class="paragraph">
+        <span class="underline">if-else statement</span>
+        <br>
+        It works in the following way: <br><br>
+        
+        <textarea class="text-area" name="" id="" rows="7" cols="38" rows="">if(condition === true){
+   //run instructions 
+  }
+else {
+  //run the other set of instructions
+  }</textarea>
+      </p>
+      <p class="paragraph">
+        The above example of traffic signal could be implemented in the following manner using if-else: <br><br>
+       
+        <textarea class="text-area" name="" id="" rows="7" cols="38" rows="">if(condition === true){
+          //run instructions 
+         }
+       else {
+         //run the other set of instructions
+         }</textarea>
+      </p>
+      <p class="paragraph">
+        <span class="underline">switch statement</span>
+        <br>
+        The if statement is ideal to do a bunch of Boolean checks. If we want to evaluate the value of a single variable, and match it with a bunch of pre-defined values, then Switch is ideal.
+      </p>
+      <p class="paragraph">The syntax is: <br><br>
+        <textarea class="text-area" name="" id="" rows="11" cols="38" rows="">switch(variable){
+          case 1:
+            //instructions
+            break;
+          case 2:
+            //instructions
+            break;
+          
+          default:
+        
+        }</textarea>
+
+      </p>
+      
+      <p class="paragraph">The above traffic light scenario can be implemented as:
+        <br><br>
+        <textarea class="text-area" name="" id="" rows="20" cols="38" rows="">switch(trafficLight){
+          case 'red':
+                    //instruction to stop
+                    break;
+        
+          case 'yellow':
+                  //instruction to slow down and be prepared to stop
+                    break;
+        
+          case 'green':
+        //instruction to proceed
+        
+                    break;
+        
+          default:
+        //Display error message
+        
+        }
+        </textarea>
+      </p>
+
+      <p class="paragraph-large"> <strong>3. Describe what the DOM is and an example of how you might interact with it.</strong></p>
+      <p class="paragraph">
+        DOM stands for Document Object Model.
+       </p>
+       <p class="paragraph">
+        If the webpage is a puppet, and JavaScript is the puppet master, then Dom would be the strings that connect the puppet to the puppermaster.
+       </p>
+       <p class="paragraph">
+        The DOM represents the document as nodes and objects. JavaScript can target these nodes and objects and can interact and manipulate them.
+The document object has several properties 	and methods, which can be used with dot notation.
+<br>
+Example: <br>
+       </p>
+       <p class="paragraph">
+        <span class="underline">HTML</span> <br><br>
+        
+        <textarea class="text-area" name="" id="" cols="38" rows=""><div id=”customer-name”>Robin baby</div></textarea>
+        <br><br>
+        <span class="underline">JavaScript:</span> <br> <br>
+        
+        <textarea class="text-area" name="" id="" cols="38" rows="">let name = document.getElementById(“customer-name”); //Will store the value Robin baby in name.</textarea>
+
+       </p>
+       <p class="paragraph-large"> <strong>4. Explain the difference between accessing data from arrays and objects</strong></p>
+      <p class="paragraph">
+        An array is a collection of values which are indexed. They are stored in sequential order in the memory. <br>
+        In JavaScript, we use Square brackets to declare an array and store values in it. <br>
+        Example: <br><br>
+        <textarea class="text-area" name="" id="" rows="3" cols="38" rows="">Let array1 = []; //declares and empty array called array1
+array1 = [1,3,5,7]; //assigns the values 1,3, 5 and 7 into Array1.
+        </textarea>
+        
+       </p>
+       <p class="paragraph">
+        The values have indexes, starting from 0. <br>
+        So, they can be accessed using these indexes. <br>
+
+        array1[0] will give 1. <br>
+        array1[1] will give 3. <br>
+        array1[2] will give 5. <br>
+        array1[3] will give 7. <br>
+
+       </p>
+       
+       <p class="paragraph">An object is a key-value pair. In JavaScript, we use curly braces to declare and create an object.<br><br>
+       
+        <textarea class="text-area" name="" id="" rows="5" cols="38" rows="">const object1 = { key1: value1,
+                  Key2: value2
+};</textarea> <br>
+    </p>
+      <p class="paragraph">The values can be accesses with keys. They are not stored in sequential order in the memory. <br><br>
+        <textarea class="text-area" name="" id="" rows="3" cols="38" rows="">object1.key1; //Will give us value1</textarea> <br>
+      </p>
+      <p class="paragraph-large">5. Explain what functions are and why they are helpful</p>
+      <p class="paragraph">A function is a named block of code that can be invoked from any part of the code.
+        <br>
+        Example: <br><br>
+        <textarea class="text-area" name="" id="" rows="3" cols="38" rows="">function name(){
+        }</textarea>
+      </p>
+      <p class="paragraph">We can call the above block of code by specifying the function name: <br><br>
+        name();
+      </p>
+      <p class="paragraph">Functions allow us to encapsulate a set of instructions related to a specific task and then re-use them based on our needs anytime from anywhere.
+      </p>
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </body>
+
+
+
+</html>
