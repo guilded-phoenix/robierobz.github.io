@@ -20,6 +20,8 @@ body{
   font-weight: 300;
 }
 
+
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -95,6 +97,23 @@ a:not(.navigation__link--active):hover{
 .text-area{
   background-color: var(--color-secondary);
   color: var(--color-primary);
+}
+.text-area::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.text-area::-webkit-scrollbar-track {
+  background: var(--color-secondary);        /* color of the tracking area */
+}
+
+.text-area::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-alpha);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--color-secondary);  /* creates padding around scroll thumb */
+}
+.text-area:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);    /* color of the scroll thumb */
+  
 }
 
 @media only screen and (max-width: 1280px){
