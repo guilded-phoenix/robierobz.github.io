@@ -304,7 +304,7 @@ a:not(.navigation__link--active):hover{
   display: flex;
   padding: 5rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .blog__entry{
 
@@ -358,5 +358,8 @@ a:not(.navigation__link--active):hover{
   
   .blog{
     flex-direction: column;
+  }
+  .blog__entry{
+    margin-left: none;
   }
 }
