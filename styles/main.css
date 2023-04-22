@@ -355,7 +355,7 @@ a:not(.navigation__link--active):hover{
 }
 
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 725px){
   .blog{
     
     justify-content: flex-start;
@@ -370,14 +370,14 @@ a:not(.navigation__link--active):hover{
   }
   
 }
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 640px){
   
   .blog__entry{
     flex: 0 1 40%;
   
   } 
 }
-@media only screen and (max-width: 440px){
+@media only screen and (max-width: 510px){
   
   .blog{
     flex-direction: column;
