@@ -28,6 +28,7 @@ body{
   position: sticky;
   top:2rem;
   background-color: black;
+  z-index: 99999;
 }
 .header__logo-box{
   flex: 0 1 20%;
@@ -331,6 +332,7 @@ a:not(.navigation__link--active):hover{
   padding: 5rem;
   flex-wrap: wrap;
   justify-content: flex-start;
+  row-gap: 2rem;
 }
 .blog__entry{
 
@@ -341,7 +343,7 @@ a:not(.navigation__link--active):hover{
   text-decoration: none;
   
 }
-.blog__entry:not(:first-of-type){
+.blog__entry:not(:first-of-type), .blog__entry:not(:last-of-type){
   margin-left: 2rem;
 }
 .blog__img-box{
@@ -359,11 +361,11 @@ a:not(.navigation__link--active):hover{
 }
 
 
-@media only screen and (max-width: 725px){
+@media only screen and (max-width: 770px){
   .blog{
     
     justify-content: flex-start;
-    row-gap: 2rem;
+    
   }
   .blog__entry{
     flex: 0 1 30%;
@@ -389,4 +391,29 @@ a:not(.navigation__link--active):hover{
   .blog__entry{
     margin-left: none;
   }
+}
+
+/*te whare tapa wha*/
+.te-whare-tapa-wha{
+  margin: 5rem auto 0;
+}
+.te-whare-tapa-wha, .te-whare-tapa-wha th, .te-whare-tapa-wha td{
+  border: 1px solid black;
+}
+.te-whare-tapa-wha th{
+  font-size: 2rem;
+  
+}
+.te-whare-tapa-wha th, .te-whare-tapa-wha td{
+  padding: 1rem;
+}
+.te-whare-tapa-wha ul{
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 870px){
+  .te-whare-tapa-wha{
+    max-width: 80%;
+  }
+  
 }
