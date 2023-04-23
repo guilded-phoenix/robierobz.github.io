@@ -94,6 +94,10 @@ a:not(.navigation__link--active):hover{
   font-size: 4rem;
   padding: 2rem;
 }
+.paragraph-medium{
+  font-size: 3rem;
+  padding: 2rem;
+}
 .text-area{
   background-color: var(--color-secondary);
   color: var(--color-primary);
